@@ -1,17 +1,29 @@
+import { Link } from "react-router-dom";
+// import Button from "../Button/Button";
+import { NavItems } from "../NavItems/NavItems";
 import "./Navbar.css";
+// import Dropdown from "../DropDown/DropDown";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <h1>Pet ID</h1>
-      <div className="navLinks">
-        <a href="/">Home</a>
-        <a href="/addPet">Add A New Pet</a>
-        <a href="/editPet">Edit Pet Details</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-      </div>
-    </nav>
+    <>
+      <nav className="navbar">
+        <Link to="/">
+          <h1>Pet ID</h1>
+        </Link>
+        <ul className="navLinks">
+          {NavItems.map((item) => {
+            return (
+              <li key={item.id} className={item.cName}>
+                <Link to={item.path}>{item.title}</Link>
+              </li>
+            );
+          })}
+          {/* <Button /> */}
+        </ul>
+      </nav>
+      {/* <Dropdown /> */}
+    </>
   );
 };
 

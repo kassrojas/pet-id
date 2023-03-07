@@ -6,6 +6,10 @@ import AddPet from "./components/pages/AddPet/AddPet";
 import EditPet from "./components/pages/EditPet/EditPet";
 import About from "./components/pages/About/About";
 import Contact from "./components/pages/Contact/Contact";
+import Playtime from "./components/pages/Playtime/Playtime";
+import Medical from "./components/pages/Medical/Medical";
+import Diet from "./components/pages/Diet/Diet";
+import Custom from "./components/pages/CustomNotes/CustomNotes";
 
 function App() {
   return (
@@ -28,6 +32,18 @@ function App() {
             </Route>
             <Route path='/contact'>
               <Contact />
+            </Route>
+            <Route path='/playtime'>
+              <Playtime />
+            </Route>
+            <Route path='/medical'>
+              <Medical />
+            </Route>
+            <Route path='/diet'>
+              <Diet />
+            </Route>
+            <Route path='/custom'>
+              <Custom />
             </Route>
           </Switch>
         </div>
