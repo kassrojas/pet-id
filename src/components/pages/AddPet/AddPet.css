@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.addPet label {
+.addPet label, .addPet small {
   text-align: left;
   display: block;
   padding: .2rem;
