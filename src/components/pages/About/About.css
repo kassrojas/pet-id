@@ -1,0 +1,23 @@
+.about {
+  text-align: center;
+  display: block;
+  box-sizing: border-box; 
+  padding: .25rem;
+  max-width: 80%;
+  margin: 1rem auto;
+}
+
+.aboutContent {
+  max-width: 80%;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.aboutContent h1 {
+  margin-bottom: .5rem;
+}
+
+.aboutContent p {
+  padding: 12px;
+  font-size: 1.2rem;
+}
