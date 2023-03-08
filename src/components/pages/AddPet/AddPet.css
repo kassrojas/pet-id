@@ -1,0 +1,37 @@
+.addPet {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.addPet label {
+  text-align: left;
+  display: block;
+  padding: .2rem;
+}
+
+.addPet h1 {
+  color: #f1356d;
+  margin-bottom: .5rem;
+}
+
+.addPet input, 
+.addPet textarea, 
+.addPet select {
+  width: 100%;
+  text-align: left;
+  padding: .2rem;
+  margin: .6rem 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.addPet button {
+  background-color: #f1356d;
+  color: #fff;
+  border: none;
+  padding: .5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
